@@ -1,0 +1,3 @@
+/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir
