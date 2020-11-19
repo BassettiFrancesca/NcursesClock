@@ -170,6 +170,33 @@ Clock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Clock.cpp.s
 .PHONY : Clock.cpp.s
 
+Date.o: Date.cpp.o
+
+.PHONY : Date.o
+
+# target to build an object file
+Date.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.o
+.PHONY : Date.cpp.o
+
+Date.i: Date.cpp.i
+
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
 DateNum.o: DateNum.cpp.o
 
 .PHONY : DateNum.o
@@ -398,6 +425,9 @@ help:
 	@echo "... Clock.o"
 	@echo "... Clock.i"
 	@echo "... Clock.s"
+	@echo "... Date.o"
+	@echo "... Date.i"
+	@echo "... Date.s"
 	@echo "... DateNum.o"
 	@echo "... DateNum.i"
 	@echo "... DateNum.s"

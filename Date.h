@@ -2,6 +2,7 @@
 #define NCURSESCLOCK_DATE_H
 
 #include "Clock.h"
+#include <ncurses.h>
 
 class Date {
 public:
@@ -11,6 +12,7 @@ public:
         Clock* newClock = new Clock();
         clock = newClock;
     }
+    void showDay();
 protected:
     Clock* clock;
 };

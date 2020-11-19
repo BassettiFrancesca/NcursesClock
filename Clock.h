@@ -15,7 +15,7 @@ public:
     void setTime();
     void setDate();
 
-    bool operator==(const Clock& right) const;
+    bool operator==(const Clock* right) const;
 
     time_t getRawtime() const {
         return rawtime;

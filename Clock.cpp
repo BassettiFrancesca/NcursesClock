@@ -44,7 +44,7 @@ int Clock::getDayM() const {
 }
 
 void Clock::setDayM(int dayM) {
-    if ((year%400==0 || (year%4==0 && year%100!=0))  && month == 2){
+    if ((year%400==0 || (year%4==0 && year%100!=0)) && month == 2){
         if (dayM <= 29 && dayM >= 1)
             Clock::dayM = dayM;
     }
@@ -87,9 +87,9 @@ void Clock::setSeconds(int seconds) {
         Clock::seconds = seconds;
 }
 
-bool Clock::operator==(const Clock &right) const{
-    if (hour == right.getHour() && minutes == right.getMinutes() && seconds == right.getSeconds())
-        if (dayW == right.getDayW() && dayM == right.getDayM() && month == right.getMonth() && year == right.getYear())
+bool Clock::operator==(const Clock* right) const {
+    if (hour == right->getHour() && minutes == right->getMinutes() && seconds == right->getSeconds())
+        if (dayW == right->getDayW() && dayM == right->getDayM() && month == right->getMonth() && year == right->getYear())
             return true;
     return false;
 }

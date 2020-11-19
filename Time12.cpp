@@ -5,24 +5,57 @@ Time12::Time12(Clock *c) : Time(c) {
     if (hour>12){
         hour -= 12;
         AM = false;
+        clock->setHour(hour);
     }
     else AM = true;
-    clock->setHour(hour);
 }
 
 void Time12::print() {
-    int col,row;
-    getmaxyx(stdscr,col,row);
-    init_pair(9,COLOR_RED,COLOR_CYAN);
-    attron(COLOR_PAIR(9));
-    mvprintw(col/4,row/2,"%u",clock->getHour());
-    mvprintw(col/4,row/2+3,"%u",clock->getMinutes());
-    mvprintw(col/4,row/2+6,"%u",clock->getSeconds());
+    int y,x,h,m,s;
+    h = clock->getHour();
+    m = clock->getMinutes();
+    s = clock->getSeconds();
+    getmaxyx(stdscr,y,x);
+    if(h>9){
+        if(m>9){
+            if(s>9){
+                mvprintw(y/4,x/2,"%d:%d:%d",h,m,s);
+            }
+            else{
+                mvprintw(y/4,x/2,"%d:%d:0%d",h,m,s);
+            }
+        }
+        else{
+            if(s>9){
+                mvprintw(y/4,x/2,"%d:0%d:%d",h,m,s);
+            }
+            else{
+                mvprintw(y/4,x/2,"%d:0%d:0%d",h,m,s);
+            }
+        }
+    }
+    else{
+        if(m>9){
+            if(s>9){
+                mvprintw(y/4,x/2,"0%d:%d:%d",h,m,s);
+            }
+            else{
+                mvprintw(y/4,x/2,"0%d:%d:0%d",h,m,s);
+            }
+        }
+        else{
+            if(s>9){
+                mvprintw(y/4,x/2,"0%d:0%d:%d",h,m,s);
+            }
+            else{
+                mvprintw(y/4,x/2,"0%d:0%d:0%d",h,m,s);
+            }
+        }
+    }
+    getyx(stdscr,y,x);
     if (AM)
-        mvprintw(col/4, row/2+9, "AM");
+        mvprintw(y,x+1,"AM");
     else
-        mvprintw(col/4, row/2+9, "PM");
-    attroff(COLOR_PAIR(9));
+        mvprintw(y,x+1,"PM");
     refresh();
-    //getch();
 }

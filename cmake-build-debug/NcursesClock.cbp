@@ -90,6 +90,9 @@
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Clock.h">
 			<Option target="NcursesClock"/>
 		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Date.cpp">
+			<Option target="NcursesClock"/>
+		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Date.h">
 			<Option target="NcursesClock"/>
 		</Unit>

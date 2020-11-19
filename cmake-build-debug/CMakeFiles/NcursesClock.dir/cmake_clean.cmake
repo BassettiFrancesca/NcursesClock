@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/NcursesClock.dir/Clock.cpp.o"
+  "CMakeFiles/NcursesClock.dir/Date.cpp.o"
   "CMakeFiles/NcursesClock.dir/DateNum.cpp.o"
   "CMakeFiles/NcursesClock.dir/DateText.cpp.o"
   "CMakeFiles/NcursesClock.dir/GUIClock.cpp.o"

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/giancesca/CLionProjects/NcursesClock/Clock.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/Clock.cpp.o"
+  "/home/giancesca/CLionProjects/NcursesClock/Date.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/Date.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/DateNum.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/DateNum.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/DateText.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/DateText.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/GUIClock.cpp.o"
