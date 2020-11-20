@@ -32,3 +32,11 @@ void Date::showDay() {
         mvprintw(y/2,x/2,"%s", dayW);
     }
 }
+
+Clock *Date::getClock() const {
+    return clock;
+}
+
+void Date::setClock(Clock *clock) {
+    Date::clock = clock;
+}

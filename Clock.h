@@ -5,7 +5,7 @@
 
 class Clock {
 public:
-    Clock(){
+    Clock() {
         time(&rawtime);
         timeinfo = localtime(&rawtime);
         setTime();

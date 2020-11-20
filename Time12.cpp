@@ -1,6 +1,6 @@
 #include "Time12.h"
 
-Time12::Time12(Clock *c) : Time(c) {
+Time12::Time12() : Time() {
     int hour = clock->getHour();
     if (hour>12){
         hour -= 12;
@@ -11,6 +11,7 @@ Time12::Time12(Clock *c) : Time(c) {
 }
 
 void Time12::print() {
+    updateClock();
     int y,x,h,m,s;
     h = clock->getHour();
     m = clock->getMinutes();

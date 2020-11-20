@@ -1,6 +1,7 @@
 #include "DateText.h"
 
 void DateText::print() {
+    updateClock();
     showDay();
     int y,x;
     getyx(stdscr,y,x);

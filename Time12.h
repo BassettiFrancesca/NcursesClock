@@ -6,8 +6,10 @@
 
 class Time12 : public Time {
 public:
-    explicit Time12(Clock* c);
+    explicit Time12();
+
     virtual void print() override;
+
 private:
     bool AM;
 };

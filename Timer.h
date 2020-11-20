@@ -1,21 +1,23 @@
 #ifndef NCURSESCLOCK_TIMER_H
 #define NCURSESCLOCK_TIMER_H
 
-#include "Time24.h"
-#include <ncurses.h>
 #include <ctime>
 
 class Timer {
 public:
-    explicit Timer(Clock* c) {
-        printer = new Time24(c);
-    }
-    void getInput();
-    void stopAt();
+    Timer(int inH, int inM, int inS);
+
+    bool updateTimer();
+
+    int getH() const;
+
+    int getM() const;
+
+    int getS() const;
 
 private:
-    Time24* printer;
-    int h, m, s;
+    int h, m, s, endSec;
 };
+
 
 #endif //NCURSESCLOCK_TIMER_H

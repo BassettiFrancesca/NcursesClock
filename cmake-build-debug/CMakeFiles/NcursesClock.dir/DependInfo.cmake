@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/giancesca/CLionProjects/NcursesClock/DateNum.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/DateNum.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/DateText.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/DateText.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/GUIClock.cpp.o"
+  "/home/giancesca/CLionProjects/NcursesClock/GUITimer.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/GUITimer.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/Menu.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/Menu.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/Time12.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/Time12.cpp.o"
   "/home/giancesca/CLionProjects/NcursesClock/Time24.cpp" "/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles/NcursesClock.dir/Time24.cpp.o"

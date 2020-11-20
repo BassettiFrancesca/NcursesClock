@@ -1,6 +1,7 @@
 #include "Time24.h"
 
 void Time24::print() {
+    updateClock();
     int y,x,h,m,s;
     h = clock->getHour();
     m = clock->getMinutes();

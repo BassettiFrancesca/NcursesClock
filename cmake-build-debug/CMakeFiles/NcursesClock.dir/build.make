@@ -168,18 +168,18 @@ CMakeFiles/NcursesClock.dir/Time24.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NcursesClock.dir/Time24.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giancesca/CLionProjects/NcursesClock/Time24.cpp -o CMakeFiles/NcursesClock.dir/Time24.cpp.s
 
-CMakeFiles/NcursesClock.dir/Timer.cpp.o: CMakeFiles/NcursesClock.dir/flags.make
-CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NcursesClock.dir/Timer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NcursesClock.dir/Timer.cpp.o -c /home/giancesca/CLionProjects/NcursesClock/Timer.cpp
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.o: CMakeFiles/NcursesClock.dir/flags.make
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.o: ../GUITimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NcursesClock.dir/GUITimer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NcursesClock.dir/GUITimer.cpp.o -c /home/giancesca/CLionProjects/NcursesClock/GUITimer.cpp
 
-CMakeFiles/NcursesClock.dir/Timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NcursesClock.dir/Timer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/giancesca/CLionProjects/NcursesClock/Timer.cpp > CMakeFiles/NcursesClock.dir/Timer.cpp.i
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NcursesClock.dir/GUITimer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/giancesca/CLionProjects/NcursesClock/GUITimer.cpp > CMakeFiles/NcursesClock.dir/GUITimer.cpp.i
 
-CMakeFiles/NcursesClock.dir/Timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NcursesClock.dir/Timer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giancesca/CLionProjects/NcursesClock/Timer.cpp -o CMakeFiles/NcursesClock.dir/Timer.cpp.s
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NcursesClock.dir/GUITimer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giancesca/CLionProjects/NcursesClock/GUITimer.cpp -o CMakeFiles/NcursesClock.dir/GUITimer.cpp.s
 
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: CMakeFiles/NcursesClock.dir/flags.make
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Menu.cpp
@@ -207,6 +207,19 @@ CMakeFiles/NcursesClock.dir/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NcursesClock.dir/Date.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giancesca/CLionProjects/NcursesClock/Date.cpp -o CMakeFiles/NcursesClock.dir/Date.cpp.s
 
+CMakeFiles/NcursesClock.dir/Timer.cpp.o: CMakeFiles/NcursesClock.dir/flags.make
+CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NcursesClock.dir/Timer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NcursesClock.dir/Timer.cpp.o -c /home/giancesca/CLionProjects/NcursesClock/Timer.cpp
+
+CMakeFiles/NcursesClock.dir/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NcursesClock.dir/Timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/giancesca/CLionProjects/NcursesClock/Timer.cpp > CMakeFiles/NcursesClock.dir/Timer.cpp.i
+
+CMakeFiles/NcursesClock.dir/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NcursesClock.dir/Timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giancesca/CLionProjects/NcursesClock/Timer.cpp -o CMakeFiles/NcursesClock.dir/Timer.cpp.s
+
 # Object files for target NcursesClock
 NcursesClock_OBJECTS = \
 "CMakeFiles/NcursesClock.dir/main.cpp.o" \
@@ -216,9 +229,10 @@ NcursesClock_OBJECTS = \
 "CMakeFiles/NcursesClock.dir/DateText.cpp.o" \
 "CMakeFiles/NcursesClock.dir/GUIClock.cpp.o" \
 "CMakeFiles/NcursesClock.dir/Time24.cpp.o" \
-"CMakeFiles/NcursesClock.dir/Timer.cpp.o" \
+"CMakeFiles/NcursesClock.dir/GUITimer.cpp.o" \
 "CMakeFiles/NcursesClock.dir/Menu.cpp.o" \
-"CMakeFiles/NcursesClock.dir/Date.cpp.o"
+"CMakeFiles/NcursesClock.dir/Date.cpp.o" \
+"CMakeFiles/NcursesClock.dir/Timer.cpp.o"
 
 # External object files for target NcursesClock
 NcursesClock_EXTERNAL_OBJECTS =
@@ -230,14 +244,15 @@ NcursesClock: CMakeFiles/NcursesClock.dir/DateNum.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/DateText.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/GUIClock.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/Time24.cpp.o
-NcursesClock: CMakeFiles/NcursesClock.dir/Timer.cpp.o
+NcursesClock: CMakeFiles/NcursesClock.dir/GUITimer.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/Menu.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/Date.cpp.o
+NcursesClock: CMakeFiles/NcursesClock.dir/Timer.cpp.o
 NcursesClock: CMakeFiles/NcursesClock.dir/build.make
 NcursesClock: /usr/lib/x86_64-linux-gnu/libcurses.so
 NcursesClock: /usr/lib/x86_64-linux-gnu/libform.so
 NcursesClock: CMakeFiles/NcursesClock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable NcursesClock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable NcursesClock"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NcursesClock.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

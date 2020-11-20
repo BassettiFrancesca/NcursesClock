@@ -6,13 +6,23 @@
 
 class Date {
 public:
-    explicit Date(Clock* c) : clock(c) {}
+    explicit Date() {
+        clock = new Clock();
+    }
+
+    Clock *getClock() const;
+
+    void setClock(Clock *clock);
+
     virtual void print() = 0;
-    void updateClock(){
+
+    void updateClock() {
         Clock* newClock = new Clock();
         clock = newClock;
     }
+
     void showDay();
+
 protected:
     Clock* clock;
 };

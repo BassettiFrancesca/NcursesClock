@@ -6,8 +6,10 @@
 
 class DateText : public Date {
 public:
-    explicit DateText(Clock* c) : Date(c) {}
+    explicit DateText() : Date() {}
+
     virtual void print() override;
+
     void showMonth();
 };
 

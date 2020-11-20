@@ -278,6 +278,33 @@ GUIClock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.s
 .PHONY : GUIClock.cpp.s
 
+GUITimer.o: GUITimer.cpp.o
+
+.PHONY : GUITimer.o
+
+# target to build an object file
+GUITimer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUITimer.cpp.o
+.PHONY : GUITimer.cpp.o
+
+GUITimer.i: GUITimer.cpp.i
+
+.PHONY : GUITimer.i
+
+# target to preprocess a source file
+GUITimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUITimer.cpp.i
+.PHONY : GUITimer.cpp.i
+
+GUITimer.s: GUITimer.cpp.s
+
+.PHONY : GUITimer.s
+
+# target to generate assembly for a file
+GUITimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUITimer.cpp.s
+.PHONY : GUITimer.cpp.s
+
 Menu.o: Menu.cpp.o
 
 .PHONY : Menu.o
@@ -437,6 +464,9 @@ help:
 	@echo "... GUIClock.o"
 	@echo "... GUIClock.i"
 	@echo "... GUIClock.s"
+	@echo "... GUITimer.o"
+	@echo "... GUITimer.i"
+	@echo "... GUITimer.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"

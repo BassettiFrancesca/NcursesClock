@@ -6,7 +6,8 @@
 
 class DateNum : public Date {
 public:
-    explicit DateNum(Clock* c) : Date(c) {}
+    explicit DateNum() : Date() {}
+
     virtual void print() override;
 };
 

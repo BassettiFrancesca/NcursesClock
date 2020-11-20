@@ -1,26 +1,46 @@
 #include "Timer.h"
-#include "Time24.h"
 
-void Timer::getInput() {
-    int y,x;
-    getmaxyx(stdscr,y,x);
-    int selected = 0;
-    clear();
-    mvprintw(y/2,x/2,"Select how many hours should pass");
-    //fare menu a tendina per ore minuti secondi (ENTER = 10)
-    clear();
+Timer::Timer(int inH, int inM, int inS) {
+    h = inH;
+    m = inM;
+    s = inS;
+    time_t rawtime;
+    struct tm * timeinfo;
+    int actualSec;
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec;
+    endSec = h*3600 + m*60 + s + actualSec;
 }
 
-void Timer::stopAt() {
-    int y,x;
-    getmaxyx(stdscr,y,x);
-    // fare che si ferma quando i 2 orologi sono == usando updateClock in time24
-    clear();
-    attron(A_BLINK);
-    mvprintw(y/2,x/2,"TIME IS UP!");
-    attron(A_BLINK);
-    mvprintw(y/2 + 2,x/2,"press any key to exit");
-    attroff(A_BOLD);
-    getch();
-    endwin();
+bool Timer::updateTimer() {
+    bool changed = false;
+    time_t rawtime;
+    struct tm * timeinfo;
+    int actualSec, diffSec;
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec;
+    if(endSec >= actualSec) {
+        diffSec = endSec - actualSec;
+        h = diffSec / 3600;
+        m = (diffSec % 3600) / 60;
+        s = (diffSec % 3600) % 60;
+        changed = true;
+    }
+    return changed;
 }
+
+int Timer::getH() const {
+    return h;
+}
+
+int Timer::getM() const {
+    return m;
+}
+
+int Timer::getS() const {
+    return s;
+}
+
+
