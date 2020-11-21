@@ -6,7 +6,7 @@
 
 class DateText : public Date {
 public:
-    explicit DateText() : Date() {}
+    explicit DateText(int y, int x) : Date(y, x) {}
 
     virtual void print() override;
 

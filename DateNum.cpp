@@ -3,7 +3,6 @@
 void DateNum::print() {
     updateClock();
     showDay();
-    int y,x;
-    getyx(stdscr,y,x);
-    mvprintw(y,x+1,"%d/%d/%d",clock->getDayM(),clock->getMonth(),clock->getYear());
+    mvprintw(y/2,x/2 + 10,"%d/%d/%d",clock->getDayM(),clock->getMonth(),clock->getYear());
+    refresh();
 }

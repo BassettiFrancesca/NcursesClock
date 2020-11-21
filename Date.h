@@ -6,8 +6,10 @@
 
 class Date {
 public:
-    explicit Date() {
+    explicit Date(int iY, int iX) {
         clock = new Clock();
+        y = iY;
+        x = iX;
     }
 
     Clock *getClock() const;
@@ -25,6 +27,7 @@ public:
 
 protected:
     Clock* clock;
+    int y, x;
 };
 
 #endif //NCURSESCLOCK_DATE_H

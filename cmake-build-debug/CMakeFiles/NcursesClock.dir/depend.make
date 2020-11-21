@@ -4,6 +4,10 @@
 CMakeFiles/NcursesClock.dir/Clock.cpp.o: ../Clock.cpp
 CMakeFiles/NcursesClock.dir/Clock.cpp.o: ../Clock.h
 
+CMakeFiles/NcursesClock.dir/Date.cpp.o: ../Clock.h
+CMakeFiles/NcursesClock.dir/Date.cpp.o: ../Date.cpp
+CMakeFiles/NcursesClock.dir/Date.cpp.o: ../Date.h
+
 CMakeFiles/NcursesClock.dir/DateNum.cpp.o: ../Clock.h
 CMakeFiles/NcursesClock.dir/DateNum.cpp.o: ../Date.h
 CMakeFiles/NcursesClock.dir/DateNum.cpp.o: ../DateNum.cpp
@@ -14,18 +18,22 @@ CMakeFiles/NcursesClock.dir/DateText.cpp.o: ../Date.h
 CMakeFiles/NcursesClock.dir/DateText.cpp.o: ../DateText.cpp
 CMakeFiles/NcursesClock.dir/DateText.cpp.o: ../DateText.h
 
-CMakeFiles/NcursesClock.dir/GUIClock.cpp.o: ../Clock.h
-CMakeFiles/NcursesClock.dir/GUIClock.cpp.o: ../Date.h
-CMakeFiles/NcursesClock.dir/GUIClock.cpp.o: ../GUIClock.cpp
-CMakeFiles/NcursesClock.dir/GUIClock.cpp.o: ../GUIClock.h
-CMakeFiles/NcursesClock.dir/GUIClock.cpp.o: ../Time.h
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.o: ../GUITimer.cpp
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.o: ../GUITimer.h
+CMakeFiles/NcursesClock.dir/GUITimer.cpp.o: ../Timer.h
 
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Clock.h
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Date.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../DateNum.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../DateText.h
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../GUIClock.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../GUITimer.h
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Menu.cpp
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Menu.h
 CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Time.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Time12.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Time24.h
+CMakeFiles/NcursesClock.dir/Menu.cpp.o: ../Timer.h
 
 CMakeFiles/NcursesClock.dir/Time12.cpp.o: ../Clock.h
 CMakeFiles/NcursesClock.dir/Time12.cpp.o: ../Time.h
@@ -37,11 +45,19 @@ CMakeFiles/NcursesClock.dir/Time24.cpp.o: ../Time.h
 CMakeFiles/NcursesClock.dir/Time24.cpp.o: ../Time24.cpp
 CMakeFiles/NcursesClock.dir/Time24.cpp.o: ../Time24.h
 
-CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Clock.h
-CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Time.h
-CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Time24.h
 CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Timer.cpp
 CMakeFiles/NcursesClock.dir/Timer.cpp.o: ../Timer.h
 
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Clock.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Date.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../DateNum.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../DateText.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../GUIClock.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../GUITimer.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Menu.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Time.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Time12.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Time24.h
+CMakeFiles/NcursesClock.dir/main.cpp.o: ../Timer.h
 CMakeFiles/NcursesClock.dir/main.cpp.o: ../main.cpp
 

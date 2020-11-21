@@ -14,29 +14,33 @@ void GUITimer::getInput() {
         mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
         mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
         mvprintw(y / 2, x / 2, "%d", selected);
+        refresh();
         while (true) {
             getmaxyx(stdscr, y, x);
             input = getch();
             while (input != KEY_UP && input != KEY_DOWN && input != 10) {
-                mvprintw(y / 2 + 2, x / 2 - 4, "wrong key");
+                mvprintw(y / 2 + 2, x / 2 - 4, "WRONG KEY");
+                refresh();
                 input = getch();
             }
             if (input == KEY_UP) {
                 if (selected < max[i]) {
                     selected++;
                     clear();
-                    mvprintw(y / 2 - 3, x / 4, "Select how many hours should pass by");
+                    mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
                     mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
                     mvprintw(y / 2, x / 2, "%d", selected);
+                    refresh();
                 }
             }
             if (input == KEY_DOWN) {
                 if (selected > 0) {
                     selected--;
                     clear();
-                    mvprintw(y / 2 - 3, x / 4, "Select how many hours should pass by");
+                    mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
                     mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
                     mvprintw(y / 2, x / 2, "%d", selected);
+                    refresh();
                 }
             }
             if (input == 10) {
@@ -47,13 +51,17 @@ void GUITimer::getInput() {
     }
     timer = new Timer(chosen[0], chosen[1], chosen[2]);
     clear();
+    refresh();
 } // controllare che 0 0 0 va bene
 
 void GUITimer::print() {
+    clear();
+    refresh();
     int y,x;
     getmaxyx(stdscr,y,x);
     bool changed = timer->updateTimer();
     while(changed){
+        refresh();
         changed = timer->updateTimer();
         int h,m,s;
         h = timer->getH();
@@ -95,14 +103,14 @@ void GUITimer::print() {
                 }
             }
         }
-        refresh();
     }
     clear();
     attron(A_BLINK);
     mvprintw(y/2,x/2,"TIME IS UP!");
-    attron(A_BLINK);
+    attroff(A_BLINK);
     mvprintw(y/2 + 2,x/2,"press any key to exit");
     attroff(A_BOLD);
+    refresh();
     getch();
     endwin();
 }

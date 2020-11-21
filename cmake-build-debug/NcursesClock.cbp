@@ -108,9 +108,6 @@
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateText.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp">
-			<Option target="NcursesClock"/>
-		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/GUIClock.h">
 			<Option target="NcursesClock"/>
 		</Unit>

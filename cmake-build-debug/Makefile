@@ -251,33 +251,6 @@ DateText.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateText.cpp.s
 .PHONY : DateText.cpp.s
 
-GUIClock.o: GUIClock.cpp.o
-
-.PHONY : GUIClock.o
-
-# target to build an object file
-GUIClock.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.o
-.PHONY : GUIClock.cpp.o
-
-GUIClock.i: GUIClock.cpp.i
-
-.PHONY : GUIClock.i
-
-# target to preprocess a source file
-GUIClock.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.i
-.PHONY : GUIClock.cpp.i
-
-GUIClock.s: GUIClock.cpp.s
-
-.PHONY : GUIClock.s
-
-# target to generate assembly for a file
-GUIClock.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.s
-.PHONY : GUIClock.cpp.s
-
 GUITimer.o: GUITimer.cpp.o
 
 .PHONY : GUITimer.o
@@ -461,9 +434,6 @@ help:
 	@echo "... DateText.o"
 	@echo "... DateText.i"
 	@echo "... DateText.s"
-	@echo "... GUIClock.o"
-	@echo "... GUIClock.i"
-	@echo "... GUIClock.s"
 	@echo "... GUITimer.o"
 	@echo "... GUITimer.i"
 	@echo "... GUITimer.s"

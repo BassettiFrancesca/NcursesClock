@@ -1,8 +1,6 @@
 #include "Date.h"
 
 void Date::showDay() {
-    int y,x;
-    getmaxyx(stdscr,y,x);
     if (clock->getDayW() == 1) {
         char dayW[] = "Monday";
         mvprintw(y/2,x/2,"%s", dayW);
@@ -31,6 +29,7 @@ void Date::showDay() {
         char dayW[] = "Sunday";
         mvprintw(y/2,x/2,"%s", dayW);
     }
+    refresh();
 }
 
 Clock *Date::getClock() const {

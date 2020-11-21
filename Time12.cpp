@@ -1,6 +1,6 @@
 #include "Time12.h"
 
-Time12::Time12() : Time() {
+Time12::Time12(int y, int x) : Time(y,x) {
     int hour = clock->getHour();
     if (hour>12){
         hour -= 12;
@@ -12,11 +12,10 @@ Time12::Time12() : Time() {
 
 void Time12::print() {
     updateClock();
-    int y,x,h,m,s;
+    int h, m, s;
     h = clock->getHour();
     m = clock->getMinutes();
     s = clock->getSeconds();
-    getmaxyx(stdscr,y,x);
     if(h>9){
         if(m>9){
             if(s>9){
@@ -53,9 +52,20 @@ void Time12::print() {
             }
         }
     }
-    getyx(stdscr,y,x);
     if (AM)
-        mvprintw(y,x+1,"AM");
+        mvprintw(y/4,x/2 + 9,"AM");
     else
-        mvprintw(y,x+1,"PM");
+        mvprintw(y/4,x/2 + 9,"PM");
+    refresh();
+}
+
+void Time12::updateClock() {
+    Time::updateClock();
+    int hour = clock->getHour();
+    if (hour>12){
+        hour -= 12;
+        AM = false;
+        clock->setHour(hour);
+    }
+    else AM = true;
 }

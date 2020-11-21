@@ -6,7 +6,7 @@
 
 class DateNum : public Date {
 public:
-    explicit DateNum() : Date() {}
+    explicit DateNum(int y, int x) : Date(y,x) {}
 
     virtual void print() override;
 };

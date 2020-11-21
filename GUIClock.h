@@ -8,11 +8,8 @@ class GUIClock {
 public:
     GUIClock(Date* d,Time* t) : datePrinter(d), timePrinter(t) {}
 
-    void printDate() {
+    void print() {
         datePrinter->print();
-    }
-
-    void printTime() {
         timePrinter->print();
     }
 

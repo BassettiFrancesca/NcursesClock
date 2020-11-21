@@ -2,11 +2,10 @@
 
 void Time24::print() {
     updateClock();
-    int y,x,h,m,s;
+    int h, m, s;
     h = clock->getHour();
     m = clock->getMinutes();
     s = clock->getSeconds();
-    getmaxyx(stdscr,y,x);
     if(h>9){
         if(m>9){
             if(s>9){
@@ -43,4 +42,5 @@ void Time24::print() {
             }
         }
     }
+    refresh();
 }

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/giancesca/CLionProjects/NcursesClock/Clock.cpp
-Clock.h
-/home/giancesca/CLionProjects/NcursesClock/Clock.h
-
 /home/giancesca/CLionProjects/NcursesClock/Clock.h
 ctime
 -
@@ -17,10 +13,8 @@ ctime
 /home/giancesca/CLionProjects/NcursesClock/Date.h
 Clock.h
 /home/giancesca/CLionProjects/NcursesClock/Clock.h
-
-/home/giancesca/CLionProjects/NcursesClock/DateNum.cpp
-DateNum.h
-/home/giancesca/CLionProjects/NcursesClock/DateNum.h
+ncurses.h
+-
 
 /home/giancesca/CLionProjects/NcursesClock/DateNum.h
 Date.h
@@ -28,25 +22,27 @@ Date.h
 ncurses.h
 -
 
-/home/giancesca/CLionProjects/NcursesClock/DateText.cpp
-DateText.h
-/home/giancesca/CLionProjects/NcursesClock/DateText.h
-
 /home/giancesca/CLionProjects/NcursesClock/DateText.h
 Date.h
 /home/giancesca/CLionProjects/NcursesClock/Date.h
 ncurses.h
 -
-
-/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp
-GUIClock.h
-/home/giancesca/CLionProjects/NcursesClock/GUIClock.h
 
 /home/giancesca/CLionProjects/NcursesClock/GUIClock.h
 Date.h
 /home/giancesca/CLionProjects/NcursesClock/Date.h
 Time.h
 /home/giancesca/CLionProjects/NcursesClock/Time.h
+
+/home/giancesca/CLionProjects/NcursesClock/GUITimer.h
+Timer.h
+/home/giancesca/CLionProjects/NcursesClock/Timer.h
+ncurses.h
+-
+ctime
+-
+string
+-
 
 /home/giancesca/CLionProjects/NcursesClock/Menu.cpp
 Menu.h
@@ -55,6 +51,16 @@ Menu.h
 /home/giancesca/CLionProjects/NcursesClock/Menu.h
 GUIClock.h
 /home/giancesca/CLionProjects/NcursesClock/GUIClock.h
+GUITimer.h
+/home/giancesca/CLionProjects/NcursesClock/GUITimer.h
+Time12.h
+/home/giancesca/CLionProjects/NcursesClock/Time12.h
+Time24.h
+/home/giancesca/CLionProjects/NcursesClock/Time24.h
+DateNum.h
+/home/giancesca/CLionProjects/NcursesClock/DateNum.h
+DateText.h
+/home/giancesca/CLionProjects/NcursesClock/DateText.h
 
 /home/giancesca/CLionProjects/NcursesClock/Time.h
 Clock.h
@@ -80,21 +86,11 @@ Time.h
 ncurses.h
 -
 
-/home/giancesca/CLionProjects/NcursesClock/Timer.cpp
-Timer.h
 /home/giancesca/CLionProjects/NcursesClock/Timer.h
-Time24.h
-/home/giancesca/CLionProjects/NcursesClock/Time24.h
-
-/home/giancesca/CLionProjects/NcursesClock/Timer.h
-Clock.h
-/home/giancesca/CLionProjects/NcursesClock/Clock.h
-ncurses.h
--
 ctime
 -
 
 /home/giancesca/CLionProjects/NcursesClock/main.cpp
-iostream
--
+Menu.h
+/home/giancesca/CLionProjects/NcursesClock/Menu.h
 

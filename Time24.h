@@ -6,7 +6,7 @@
 
 class Time24 : public Time {
 public:
-    explicit Time24() : Time() {}
+    explicit Time24(int y, int x) : Time(y,x) {}
 
     virtual void print() override;
 };
