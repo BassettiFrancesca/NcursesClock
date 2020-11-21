@@ -2,15 +2,52 @@
 
 void GUITimer::getInput() {
     int y,x;
-    getmaxyx(stdscr,y,x);
-    int selected = 0;
-    int h, m, s;
+    int selected;
+    int input;
+    int chosen[3];
+    int max[3] = {23, 59, 59};
+    string choices[3] = {"hours", "minutes", "seconds"};
+    for(int i = 0;i < 3;i++) {
+        selected = 0;
+        getmaxyx(stdscr, y, x);
+        clear();
+        mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
+        mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+        mvprintw(y / 2, x / 2, "%d", selected);
+        while (true) {
+            getmaxyx(stdscr, y, x);
+            input = getch();
+            while (input != KEY_UP && input != KEY_DOWN && input != 10) {
+                mvprintw(y / 2 + 2, x / 2 - 4, "wrong key");
+                input = getch();
+            }
+            if (input == KEY_UP) {
+                if (selected < max[i]) {
+                    selected++;
+                    clear();
+                    mvprintw(y / 2 - 3, x / 4, "Select how many hours should pass by");
+                    mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+                    mvprintw(y / 2, x / 2, "%d", selected);
+                }
+            }
+            if (input == KEY_DOWN) {
+                if (selected > 0) {
+                    selected--;
+                    clear();
+                    mvprintw(y / 2 - 3, x / 4, "Select how many hours should pass by");
+                    mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+                    mvprintw(y / 2, x / 2, "%d", selected);
+                }
+            }
+            if (input == 10) {
+                break;
+            }
+        }
+        chosen[i] = selected;
+    }
+    timer = new Timer(chosen[0], chosen[1], chosen[2]);
     clear();
-    mvprintw(y/2,x/2,"Select how many hours should pass");
-    //fare menu a tendina per ore minuti secondi (ENTER = 10)
-    timer = new Timer(h, m, s);
-    clear();
-}
+} // controllare che 0 0 0 va bene
 
 void GUITimer::print() {
     int y,x;

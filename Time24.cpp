@@ -43,5 +43,4 @@ void Time24::print() {
             }
         }
     }
-    refresh();
 }

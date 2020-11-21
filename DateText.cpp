@@ -9,7 +9,6 @@ void DateText::print() {
     showMonth();
     getyx(stdscr,y,x);
     mvprintw(y,x+1,"%d",clock->getYear());
-    refresh();
 }
 
 void DateText::showMonth() {

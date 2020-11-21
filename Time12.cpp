@@ -58,5 +58,4 @@ void Time12::print() {
         mvprintw(y,x+1,"AM");
     else
         mvprintw(y,x+1,"PM");
-    refresh();
 }

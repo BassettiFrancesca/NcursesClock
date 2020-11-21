@@ -6,5 +6,4 @@ void DateNum::print() {
     int y,x;
     getyx(stdscr,y,x);
     mvprintw(y,x+1,"%d/%d/%d",clock->getDayM(),clock->getMonth(),clock->getYear());
-    refresh();
 }

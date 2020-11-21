@@ -4,6 +4,8 @@
 #include "Timer.h"
 #include <ncurses.h>
 #include <ctime>
+#include <string>
+using namespace std;
 
 class GUITimer {
 public:
