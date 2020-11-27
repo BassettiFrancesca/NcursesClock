@@ -10,7 +10,7 @@ public:
 
     virtual void print() override;
 
-    void showMonth();
+    int showMonth(int l);
 };
 
 #endif //NCURSESCLOCK_DATETEXT_H

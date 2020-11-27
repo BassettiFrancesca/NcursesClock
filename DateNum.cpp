@@ -2,7 +2,7 @@
 
 void DateNum::print() {
     updateClock();
-    showDay();
-    mvprintw(y/2,x/2 + 10,"%d/%d/%d",clock->getDayM(),clock->getMonth(),clock->getYear());
+    int l = showDay() + 1; // lunghezza della stringa del giorno e uno spazio
+    mvprintw(y/2,x/4 + l,"%d/%d/%d",clock->getDayM(),clock->getMonth(),clock->getYear());
     refresh();
 }

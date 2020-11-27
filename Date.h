@@ -3,6 +3,8 @@
 
 #include "Clock.h"
 #include <ncurses.h>
+#include <string>
+using namespace std;
 
 class Date {
 public:
@@ -23,7 +25,7 @@ public:
         clock = new Clock();
     }
 
-    void showDay();
+    int showDay();
 
 protected:
     Clock* clock;

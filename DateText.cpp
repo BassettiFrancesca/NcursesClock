@@ -2,61 +2,55 @@
 
 void DateText::print() {
     updateClock();
-    showDay();
-    mvprintw(y/2,x/2 + 10,"%d",clock->getDayM());
-    showMonth();
-    mvprintw(y/2,x/2 + 23,"%d",clock->getYear());
+    int l = showDay() + 1; // lunghezza della stringa del giorno e uno spazio
+    mvprintw(y/2,x/4 + l,"%d",clock->getDayM());
+    int m = showMonth(l) + l + 1; // lunghezza di quello stampato prima e uno spazio
+    mvprintw(y/2,x/4 + m,"%d",clock->getYear());
     refresh();
 }
 
-void DateText::showMonth() {
+int DateText::showMonth(int l) {
+    string month;
     if (clock->getMonth() == 1) {
-        char month[] = "January";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "January";
     }
     if (clock->getMonth() == 2) {
-        char month[] = "February";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "February";
     }
     if (clock->getMonth() == 3) {
-        char month[] = "March";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "March";
     }
     if (clock->getMonth() == 4) {
-        char month[] = "April";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "April";
     }
     if (clock->getMonth() == 5) {
-        char month[] = "May";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "May";
     }
     if (clock->getMonth() == 6) {
-        char month[] = "June";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "June";
     }
     if (clock->getMonth() == 7) {
-        char month[] = "July";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "July";
     }
     if (clock->getMonth() == 8) {
-        char month[] = "August";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "August";
     }
     if (clock->getMonth() == 9) {
-        char month[] = "September";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "September";
     }
     if (clock->getMonth() == 10) {
-        char month[] = "October";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "October";
     }
     if (clock->getMonth() == 11) {
-        char month[] = "November";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "November";
     }
     if (clock->getMonth() == 12) {
-        char month[] = "December";
-        mvprintw(y/2,x/2 + 13,"%s", month);
+        month = "December";
     }
+    int d = 2; // se il giorno del mese è da 1 a 9
+    if(clock->getDayM() > 9) // se è di due cifre per spazio nel testo
+        d = 3;
+    mvprintw(y/2, x/4 + l + d, "%s", month.c_str());
     refresh();
+    return month.length() + d;
 }

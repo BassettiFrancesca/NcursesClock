@@ -1,35 +1,31 @@
 #include "Date.h"
 
-void Date::showDay() {
+int Date::showDay() {
+    string dayW;
     if (clock->getDayW() == 1) {
-        char dayW[] = "Monday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Monday";
     }
     if (clock->getDayW() == 2) {
-        char dayW[] = "Tuesday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Tuesday";
     }
     if (clock->getDayW() == 3) {
-        char dayW[] = "Wednesday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Wednesday";
     }
     if (clock->getDayW() == 4) {
-        char dayW[] = "Thursday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Thursday";
     }
     if (clock->getDayW() == 5) {
-        char dayW[] = "Friday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Friday";
     }
     if (clock->getDayW() == 6) {
-        char dayW[] = "Saturday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Saturday";
     }
     if (clock->getDayW() == 0) {
-        char dayW[] = "Sunday";
-        mvprintw(y/2,x/2,"%s", dayW);
+        dayW = "Sunday";
     }
+    mvprintw(y/2, x/4, "%s", dayW.c_str());
     refresh();
+    return dayW.length();
 }
 
 Clock *Date::getClock() const {
