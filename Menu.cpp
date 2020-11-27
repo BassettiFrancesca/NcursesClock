@@ -16,7 +16,7 @@ void Menu::getUserChoice() {
         clear();
         getmaxyx(stdscr, y, x);
         attroff(A_BOLD);
-        mvprintw(y/4 - 2, x/4, "Choose by pressing key UP or DOWN and then ENTER");
+        mvprintw(y/4 - 2, x/4, "Choose by pressing key UP or DOWN and then ENTER:");
         attron(A_BOLD);
         for(int i=0; i < 5; i++){
             if(i == selected)
@@ -34,12 +34,12 @@ void Menu::getUserChoice() {
         if(choice == KEY_UP){
             selected--;
             if(selected == -1)
-                selected = 0;
+                selected = 4;
         }
         if(choice == KEY_DOWN){
             selected++;
             if(selected == 5){
-                selected = 4;
+                selected = 0;
             }
         }
         if(choice == 10){
