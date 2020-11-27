@@ -22,8 +22,8 @@ public:
     virtual void print() = 0;
 
     virtual void updateClock() {
-        Clock* newClock = new Clock();
-        clock = newClock;
+        delete clock;
+        clock = new Clock();
     }
 
 protected:

@@ -9,7 +9,7 @@ using namespace std;
 
 class GUITimer {
 public:
-    explicit GUITimer() {
+    GUITimer() {
         getInput();
     }
 

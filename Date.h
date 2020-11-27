@@ -19,8 +19,8 @@ public:
     virtual void print() = 0;
 
     void updateClock() {
-        Clock* newClock = new Clock();
-        clock = newClock;
+        delete clock;
+        clock = new Clock();
     }
 
     void showDay();

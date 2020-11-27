@@ -21,7 +21,7 @@ bool Timer::updateTimer() {
     time(&rawtime);
     timeinfo = localtime(&rawtime);
     actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec;
-    if(endSec >= actualSec) {
+    if(endSec > actualSec) {
         diffSec = endSec - actualSec;
         h = diffSec / 3600;
         m = (diffSec % 3600) / 60;

@@ -13,7 +13,9 @@ void GUITimer::getInput() {
         clear();
         mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
         mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+        attroff(A_BOLD);
         mvprintw(y / 2, x / 2, "%d", selected);
+        attron(A_BOLD);
         refresh();
         while (true) {
             getmaxyx(stdscr, y, x);
@@ -29,7 +31,9 @@ void GUITimer::getInput() {
                     clear();
                     mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
                     mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+                    attroff(A_BOLD);
                     mvprintw(y / 2, x / 2, "%d", selected);
+                    attron(A_BOLD);
                     refresh();
                 }
             }
@@ -39,7 +43,9 @@ void GUITimer::getInput() {
                     clear();
                     mvprintw(y / 2 - 3, x / 4, "Select how many %s should pass by", choices[i].c_str());
                     mvprintw(y / 2 - 2, x / 4, "pressing key UP or DOWN and then ENTER");
+                    attroff(A_BOLD);
                     mvprintw(y / 2, x / 2, "%d", selected);
+                    attron(A_BOLD);
                     refresh();
                 }
             }
@@ -52,7 +58,7 @@ void GUITimer::getInput() {
     timer = new Timer(chosen[0], chosen[1], chosen[2]);
     clear();
     refresh();
-} // controllare che 0 0 0 va bene
+}
 
 void GUITimer::print() {
     clear();
@@ -106,10 +112,10 @@ void GUITimer::print() {
     }
     clear();
     attron(A_BLINK);
-    mvprintw(y/2,x/2,"TIME IS UP!");
+    mvprintw(y/2 - 1,x/2 - 5,"TIME IS UP!");
     attroff(A_BLINK);
-    mvprintw(y/2 + 2,x/2,"press any key to exit");
     attroff(A_BOLD);
+    mvprintw(y/2 + 1,x/2 - 10,"press any key to exit");
     refresh();
     getch();
     endwin();
