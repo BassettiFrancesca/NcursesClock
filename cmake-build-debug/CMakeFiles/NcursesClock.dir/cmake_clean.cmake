@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/NcursesClock.dir/Clock.cpp.o"
   "CMakeFiles/NcursesClock.dir/Date.cpp.o"
   "CMakeFiles/NcursesClock.dir/DateNum.cpp.o"
   "CMakeFiles/NcursesClock.dir/DateText.cpp.o"
@@ -7,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/NcursesClock.dir/Menu.cpp.o"
   "CMakeFiles/NcursesClock.dir/Time12.cpp.o"
   "CMakeFiles/NcursesClock.dir/Time24.cpp.o"
-  "CMakeFiles/NcursesClock.dir/Timer.cpp.o"
   "CMakeFiles/NcursesClock.dir/main.cpp.o"
   "NcursesClock"
   "NcursesClock.pdb"

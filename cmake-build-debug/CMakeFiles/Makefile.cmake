@@ -11,6 +11,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
+  "../test/CMakeLists.txt"
+  "../test/lib/googletest/CMakeLists.txt"
+  "../test/lib/googletest/cmake/internal_utils.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -22,6 +25,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CheckCSourceCompiles.cmake"
+  "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CheckIncludeFile.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/CheckLibraryExists.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/Compiler/GNU-C.cmake"
@@ -31,6 +36,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageMessage.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/FindPkgConfig.cmake"
+  "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/FindPythonInterp.cmake"
+  "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/FindThreads.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux-GNU-C.cmake"
   "/home/giancesca/clion-2020.2.4/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -49,9 +56,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/lib/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/core.dir/DependInfo.cmake"
   "CMakeFiles/NcursesClock.dir/DependInfo.cmake"
+  "test/CMakeFiles/runClockTests.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

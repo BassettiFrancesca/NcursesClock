@@ -69,3 +69,7 @@ void Time12::updateClock() {
     }
     else AM = true;
 }
+
+bool Time12::isAm() const {
+    return AM;
+}

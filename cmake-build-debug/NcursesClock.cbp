@@ -5,7 +5,7 @@
 		<Option title="NcursesClock"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\lib\;CMake Files\test\lib\googletest\;CMake Files\test\lib\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug"/>
@@ -32,6 +32,52 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="core">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/libcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 core"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="core/fast">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/libcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 core/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,12 +129,162 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="runClockTests">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/runClockTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 runClockTests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runClockTests/fast">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/runClockTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 runClockTests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/include"/>
+					<Add directory="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/giancesca/CLionProjects/NcursesClock/cmake-build-debug/test/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Clock.cpp">
-			<Option target="NcursesClock"/>
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Clock.h">
-			<Option target="NcursesClock"/>
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Date.cpp">
 			<Option target="NcursesClock"/>
@@ -124,7 +320,7 @@
 			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time.h">
-			<Option target="NcursesClock"/>
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12.cpp">
 			<Option target="NcursesClock"/>
@@ -139,16 +335,40 @@
 			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Timer.cpp">
-			<Option target="NcursesClock"/>
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Timer.h">
-			<Option target="NcursesClock"/>
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/main.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/ClockFixture.cpp">
+			<Option target="runClockTests"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/TimerTest.cpp">
+			<Option target="runClockTests"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/runAllTests.cpp">
+			<Option target="runClockTests"/>
+		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\lib\googletest\"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/test/lib/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\lib\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

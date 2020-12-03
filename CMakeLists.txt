@@ -3,7 +3,11 @@ project(NcursesClock)
 
 set(CMAKE_CXX_STANDARD 11)
 
+add_subdirectory(test)
+
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
-add_executable(NcursesClock main.cpp Clock.cpp Clock.h Date.h Time.h Time12.cpp Time12.h DateNum.cpp DateNum.h DateText.cpp DateText.h GUIClock.h Time24.cpp Time24.h GUITimer.cpp GUITimer.h Menu.cpp Menu.h Date.cpp Timer.cpp Timer.h)
-target_link_libraries(NcursesClock ${CURSES_LIBRARIES})
+set(SOURCE_FILES Clock.cpp Clock.h Time.h Timer.cpp Timer.h)
+add_executable(NcursesClock main.cpp Time12.cpp Time12.h Date.h DateNum.cpp DateNum.h DateText.cpp DateText.h GUIClock.h Time24.cpp Time24.h GUITimer.cpp GUITimer.h Menu.cpp Menu.h Date.cpp)
+add_library(core ${SOURCE_FILES})
+target_link_libraries(NcursesClock ${CURSES_LIBRARIES} core)

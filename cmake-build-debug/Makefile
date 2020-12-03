@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
 # Target rules for targets named NcursesClock
 
 # Build rule for target.
@@ -143,13 +156,52 @@ NcursesClock/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/build
 .PHONY : NcursesClock/fast
 
+#=============================================================================
+# Target rules for targets named runClockTests
+
+# Build rule for target.
+runClockTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runClockTests
+.PHONY : runClockTests
+
+# fast build rule for target.
+runClockTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runClockTests.dir/build.make test/CMakeFiles/runClockTests.dir/build
+.PHONY : runClockTests/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f test/lib/googletest/CMakeFiles/gtest_main.dir/build.make test/lib/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f test/lib/googletest/CMakeFiles/gtest.dir/build.make test/lib/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
 Clock.o: Clock.cpp.o
 
 .PHONY : Clock.o
 
 # target to build an object file
 Clock.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Clock.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.o
 .PHONY : Clock.cpp.o
 
 Clock.i: Clock.cpp.i
@@ -158,7 +210,7 @@ Clock.i: Clock.cpp.i
 
 # target to preprocess a source file
 Clock.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Clock.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.i
 .PHONY : Clock.cpp.i
 
 Clock.s: Clock.cpp.s
@@ -167,7 +219,7 @@ Clock.s: Clock.cpp.s
 
 # target to generate assembly for a file
 Clock.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Clock.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.s
 .PHONY : Clock.cpp.s
 
 Date.o: Date.cpp.o
@@ -365,7 +417,7 @@ Timer.o: Timer.cpp.o
 
 # target to build an object file
 Timer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Timer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.o
 .PHONY : Timer.cpp.o
 
 Timer.i: Timer.cpp.i
@@ -374,7 +426,7 @@ Timer.i: Timer.cpp.i
 
 # target to preprocess a source file
 Timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Timer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.i
 .PHONY : Timer.cpp.i
 
 Timer.s: Timer.cpp.s
@@ -383,7 +435,7 @@ Timer.s: Timer.cpp.s
 
 # target to generate assembly for a file
 Timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Timer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.s
 .PHONY : Timer.cpp.s
 
 main.o: main.cpp.o
@@ -422,6 +474,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NcursesClock"
+	@echo "... core"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... runClockTests"
 	@echo "... Clock.o"
 	@echo "... Clock.i"
 	@echo "... Clock.s"

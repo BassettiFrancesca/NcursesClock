@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/runClockTests.dir/runAllTests.cpp.o CMakeFiles/runClockTests.dir/ClockFixture.cpp.o CMakeFiles/runClockTests.dir/TimerTest.cpp.o  -o runClockTests  lib/googletest/libgtestd.a lib/googletest/libgtest_maind.a ../libcore.a lib/googletest/libgtestd.a -pthread 

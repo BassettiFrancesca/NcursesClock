@@ -12,6 +12,8 @@ public:
 
     virtual void updateClock() override;
 
+    bool isAm() const;
+
 private:
     bool AM;
 };
