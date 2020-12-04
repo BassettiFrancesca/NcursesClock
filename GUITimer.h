@@ -10,7 +10,7 @@ using namespace std;
 class GUITimer {
 public:
     GUITimer() {
-        getInput();
+        getInput(); // timer viene inizializzato al suo interno
     }
 
     void getInput();

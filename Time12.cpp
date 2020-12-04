@@ -2,8 +2,8 @@
 
 Time12::Time12(int y, int x) : Time(y,x) {
     int hour = clock->getHour();
-    if (hour>12){
-        hour -= 12;
+    if (hour>12){ // se l'ora è da 13-23
+        hour -= 12; // correggere che mezzanotte sia 12 AM e mezzogiorno 12 PM
         AM = false;
         clock->setHour(hour);
     }

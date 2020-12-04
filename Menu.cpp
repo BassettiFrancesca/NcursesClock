@@ -1,6 +1,6 @@
 #include "Menu.h"
 
-void Menu::getUserChoice() {
+void Menu::getUserChoice() { // permette all'utente di selezionare la modalità d'uso
     int y, x;
     int selected = 0;
     int choice;
@@ -20,13 +20,13 @@ void Menu::getUserChoice() {
         attron(A_BOLD);
         for(int i=0; i < 5; i++){
             if(i == selected)
-                attron(A_REVERSE);
+                attron(A_REVERSE); // evidenzia l'opzione selezionata al momento
             mvprintw(y/4 + i, x/4, "%s", choices[i].c_str());
             attroff(A_REVERSE);
             refresh();
         }
         choice = getch();
-        while(choice != KEY_UP && choice != KEY_DOWN && choice != 10){
+        while(choice != KEY_UP && choice != KEY_DOWN && choice != 10){ // se l'utente non ha premuto le frecce o invio
             mvprintw(y/4 + 7, x/2, "WRONG KEY");
             refresh();
             choice = getch();
@@ -34,15 +34,15 @@ void Menu::getUserChoice() {
         if(choice == KEY_UP){
             selected--;
             if(selected == -1)
-                selected = 4;
+                selected = 4; // menù circolare
         }
         if(choice == KEY_DOWN){
             selected++;
             if(selected == 5){
-                selected = 0;
+                selected = 0; // menù circolare
             }
         }
-        if(choice == 10){
+        if(choice == 10){ // se è stato premuto invio
             clear();
             refresh();
             break;
@@ -51,7 +51,7 @@ void Menu::getUserChoice() {
     printChoice(selected);
 }
 
-void Menu::printChoice(int choice) {
+void Menu::printChoice(int choice) { // stampa la scelta selezionata
     int y, x;
     getmaxyx(stdscr, y, x);
     if(choice == 0){

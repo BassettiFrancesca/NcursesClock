@@ -52,5 +52,5 @@ int DateText::showMonth(int l) {
         d = 3;
     mvprintw(y/2, x/4 + l + d, "%s", month.c_str());
     refresh();
-    return month.length() + d;
+    return month.length() + d; // lunghezza del mese + giorno del mese + spazio
 }

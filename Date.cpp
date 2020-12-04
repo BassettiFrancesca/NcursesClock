@@ -23,15 +23,15 @@ int Date::showDay() {
     if (clock->getDayW() == 0) {
         dayW = "Sunday";
     }
-    mvprintw(y/2, x/4, "%s", dayW.c_str());
+    mvprintw(y/2, x/4, "%s", dayW.c_str()); // stampa il giorno testuale della settimana nella finestra
     refresh();
-    return dayW.length();
+    return dayW.length(); // serve per distanziare gli elementi successivi
 }
 
 Clock *Date::getClock() const {
     return clock;
 }
 
-void Date::setClock(Clock *clock) {
-    Date::clock = clock;
+void Date::setClock(Clock *newClock) {
+    Date::clock = newClock;
 }

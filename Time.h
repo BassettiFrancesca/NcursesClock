@@ -7,8 +7,8 @@ class Time {
 public:
     explicit Time(int iY, int iX) {
         clock = new Clock();
-        y = iY;
-        x = iX;
+        y = iY; // altezza della finestra in cui è eseguito il programma
+        x = iX; // larghezza della finestra in cui è eseguito il programma
     }
 
     Clock *getClock() const {

@@ -28,7 +28,7 @@ bool Timer::updateTimer() {
         s = (diffSec % 3600) % 60;
         changed = true;
     }
-    return changed;
+    return changed; // variabile che rimane vera finché il timer non scade
 }
 
 int Timer::getH() const {

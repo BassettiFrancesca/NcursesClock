@@ -4,7 +4,7 @@
 #include "Time.h"
 #include <ncurses.h>
 
-class Time12 : public Time {
+class Time12 : public Time { // classe per stampare l'ora in formato 12h (AM/PM)
 public:
     explicit Time12(int y, int x);
 
