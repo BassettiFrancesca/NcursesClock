@@ -320,7 +320,7 @@
 			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time.h">
-			<Option target="core"/>
+			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12.cpp">
 			<Option target="NcursesClock"/>
