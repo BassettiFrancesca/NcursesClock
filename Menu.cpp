@@ -103,7 +103,7 @@ void Menu::printChoice(int choice) { // stampa la scelta selezionata
 bool Menu::resizeWindow(int y, int x) { // gestisce il caso in cui la finestra aperta dall'utente sia troppo piccola
     if(y >= (y/4 + 12) && x >= (x/4 + 56))
         return false;
-    else printw("RESIZE WINDOW PLEASE");
+    else printw("RESIZE WINDOW PLEASE (this message will be shown until right dimension)");
     refresh();
     getch();
     clear();
