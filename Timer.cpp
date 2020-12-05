@@ -3,14 +3,14 @@
 Timer::Timer(int inH, int inM, int inS) {
     h = inH;
     m = inM;
-    s = inS;
+    s = inS; // memorizza i valori inseriti dall'utente
     time_t rawtime;
     struct tm * timeinfo;
     int actualSec;
     time(&rawtime);
     timeinfo = localtime(&rawtime);
-    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec;
-    endSec = h*3600 + m*60 + s + actualSec;
+    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec; // calcola l'ora attuale in secondi
+    endSec = h*3600 + m*60 + s + actualSec; // calcola l'ora finale in secondi
 }
 
 bool Timer::updateTimer() {
@@ -20,9 +20,9 @@ bool Timer::updateTimer() {
     int actualSec, diffSec;
     time(&rawtime);
     timeinfo = localtime(&rawtime);
-    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec;
-    if(endSec > actualSec) {
-        diffSec = endSec - actualSec;
+    actualSec = timeinfo->tm_hour*3600 + timeinfo->tm_min*60 + timeinfo->tm_sec; // calcola l'ora attuale in secondi
+    if(endSec > actualSec) { // se non ha ancora raggiunto l'ora finale aggiorna il timer
+        diffSec = endSec - actualSec; // calcola la differenza tra l'ora finale e la attuale
         h = diffSec / 3600;
         m = (diffSec % 3600) / 60;
         s = (diffSec % 3600) % 60;

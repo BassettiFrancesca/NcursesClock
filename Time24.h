@@ -4,7 +4,7 @@
 #include "Time.h"
 #include <ncurses.h>
 
-class Time24 : public Time {
+class Time24 : public Time { // classe per stampare l'ora in formato 24h
 public:
     explicit Time24(int y, int x) : Time(y,x) {}
 

@@ -1,22 +1,30 @@
 #include "Time12.h"
 
-Time12::Time12(int y, int x) : Time(y,x) {
-    int hour = clock->getHour();
-    if (hour>12){ // se l'ora è da 13-23
-        hour -= 12; // correggere che mezzanotte sia 12 AM e mezzogiorno 12 PM
+Time12::Time12(int y, int x) : Time(y,x) { // il costruttore trasforma in formato 12h
+    int hour = clock->getHour(); // prende l'ora in formato 24h
+    if (hour == 12){ // se è mezzogiorno -> 12 PM
+        AM = false;
+    }
+    if (hour == 0){ // se è mezzanotte -> 12 AM
+        hour = 12;
+        AM = true;
+        clock->setHour(hour);
+    }
+    if (hour > 12){ // se l'ora è da 13-23
+        hour -= 12;
         AM = false;
         clock->setHour(hour);
     }
-    else AM = true;
+    else AM = true; // se l'ora è da 1-11
 }
 
 void Time12::print() {
-    updateClock();
+    updateClock(); // si aggiorna all'ora attuale
     int h, m, s;
     h = clock->getHour();
     m = clock->getMinutes();
     s = clock->getSeconds();
-    if(h>9){
+    if(h>9){ // stampa l'ora con eventuali 0 davanti se cifra tra 0-9
         if(m>9){
             if(s>9){
                 mvprintw(y/4,x/4,"%d:%d:%d",h,m,s);
@@ -62,7 +70,15 @@ void Time12::print() {
 void Time12::updateClock() {
     Time::updateClock();
     int hour = clock->getHour();
-    if (hour>12){
+    if (hour == 12){
+        AM = false;
+    }
+    if (hour == 0){
+        hour = 12;
+        AM = true;
+        clock->setHour(hour);
+    }
+    if (hour > 12){
         hour -= 12;
         AM = false;
         clock->setHour(hour);

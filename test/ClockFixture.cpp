@@ -25,12 +25,12 @@ TEST_F(ClockSuite, TestSetter) {
     c.setSeconds(90);
     c.setDayW(9);
     c.setDayM(33);
-    c.setMonth(15);
+    c.setMonth(15); // valori che non devono essere accettati dai setter
 
     ASSERT_EQ(5, c.getHour());
     ASSERT_EQ(5, c.getMinutes());
     ASSERT_EQ(5, c.getSeconds());
     ASSERT_EQ(5, c.getDayW());
     ASSERT_EQ(5, c.getDayM());
-    ASSERT_EQ(5, c.getMonth());
+    ASSERT_EQ(5, c.getMonth()); // controlli che non siano stati memorizzati valori non validi
 }

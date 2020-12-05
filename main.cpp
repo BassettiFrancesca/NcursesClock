@@ -1,6 +1,6 @@
 #include "Menu.h"
 
 int main() {
-    Menu* menu = new Menu();
+    Menu menu;
     return 0;
 }
