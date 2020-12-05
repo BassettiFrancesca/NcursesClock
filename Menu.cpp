@@ -12,6 +12,14 @@ void Menu::getUserChoice() { // permette all'utente di selezionare la modalità 
     curs_set(FALSE);
     keypad(stdscr,true);
     attron(A_BOLD);
+    bool windowSmall = false;
+    getmaxyx(stdscr, y, x);
+    if(y < (y/4 + 12) || x < (x/4 + 56)) // controlla le dimensioni della finestra in uso
+        windowSmall = true;
+    while(windowSmall){
+        getmaxyx(stdscr, y, x);
+        windowSmall = resizeWindow(y, x);
+    }
     while(true){
         clear();
         getmaxyx(stdscr, y, x);
@@ -90,4 +98,14 @@ void Menu::printChoice(int choice) { // stampa la scelta selezionata
         timer = new GUITimer;
         timer->print();
     }
+}
+
+bool Menu::resizeWindow(int y, int x) { // gestisce il caso in cui la finestra aperta dall'utente sia troppo piccola
+    if(y >= (y/4 + 12) && x >= (x/4 + 56))
+        return false;
+    else printw("RESIZE WINDOW PLEASE");
+    refresh();
+    getch();
+    clear();
+    return true;
 }

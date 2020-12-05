@@ -111,7 +111,7 @@ void GUITimer::print() { // stampa il tempo rimanente del timer
         }
     }
     clear();
-    attron(A_BLINK);
+    attron(A_BLINK); // fa lampeggiare la scritta ma con alcuni terminali non funziona
     mvprintw(y/2 - 1,x/2 - 5,"TIME IS UP!"); // informa che il tempo è scaduto
     attroff(A_BLINK);
     attroff(A_BOLD);

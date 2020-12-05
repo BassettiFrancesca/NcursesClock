@@ -46,6 +46,10 @@ ctime
 string
 -
 
+/home/giancesca/CLionProjects/NcursesClock/Menu.cpp
+Menu.h
+/home/giancesca/CLionProjects/NcursesClock/Menu.h
+
 /home/giancesca/CLionProjects/NcursesClock/Menu.h
 GUIClock.h
 /home/giancesca/CLionProjects/NcursesClock/GUIClock.h
@@ -79,8 +83,4 @@ ncurses.h
 /home/giancesca/CLionProjects/NcursesClock/Timer.h
 ctime
 -
-
-/home/giancesca/CLionProjects/NcursesClock/main.cpp
-Menu.h
-/home/giancesca/CLionProjects/NcursesClock/Menu.h
 

@@ -18,6 +18,8 @@ public:
 
     void printChoice(int choice);
 
+    bool resizeWindow(int y, int x);
+
 private:
     GUIClock* clock;
     GUITimer* timer;
