@@ -286,22 +286,25 @@
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Clock.h">
 			<Option target="core"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Date.cpp">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateGetter.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Date.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateGetter.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateNum.cpp">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateNum.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateText.cpp">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateText.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.h">
+			<Option target="NcursesClock"/>
+		</Unit>
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/GUIClock.h">
@@ -319,19 +322,19 @@
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Menu.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12Getter.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12.cpp">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12Getter.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time12.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time24Getter.cpp">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time24.cpp">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time24Getter.h">
 			<Option target="NcursesClock"/>
 		</Unit>
-		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Time24.h">
+		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/TimeGetter.h">
 			<Option target="NcursesClock"/>
 		</Unit>
 		<Unit filename="/home/giancesca/CLionProjects/NcursesClock/Timer.cpp">

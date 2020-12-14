@@ -222,86 +222,113 @@ Clock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.s
 .PHONY : Clock.cpp.s
 
-Date.o: Date.cpp.o
+DateGetter.o: DateGetter.cpp.o
 
-.PHONY : Date.o
-
-# target to build an object file
-Date.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.o
-.PHONY : Date.cpp.o
-
-Date.i: Date.cpp.i
-
-.PHONY : Date.i
-
-# target to preprocess a source file
-Date.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.i
-.PHONY : Date.cpp.i
-
-Date.s: Date.cpp.s
-
-.PHONY : Date.s
-
-# target to generate assembly for a file
-Date.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Date.cpp.s
-.PHONY : Date.cpp.s
-
-DateNum.o: DateNum.cpp.o
-
-.PHONY : DateNum.o
+.PHONY : DateGetter.o
 
 # target to build an object file
-DateNum.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNum.cpp.o
-.PHONY : DateNum.cpp.o
+DateGetter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateGetter.cpp.o
+.PHONY : DateGetter.cpp.o
 
-DateNum.i: DateNum.cpp.i
+DateGetter.i: DateGetter.cpp.i
 
-.PHONY : DateNum.i
+.PHONY : DateGetter.i
 
 # target to preprocess a source file
-DateNum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNum.cpp.i
-.PHONY : DateNum.cpp.i
+DateGetter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateGetter.cpp.i
+.PHONY : DateGetter.cpp.i
 
-DateNum.s: DateNum.cpp.s
+DateGetter.s: DateGetter.cpp.s
 
-.PHONY : DateNum.s
+.PHONY : DateGetter.s
 
 # target to generate assembly for a file
-DateNum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNum.cpp.s
-.PHONY : DateNum.cpp.s
+DateGetter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateGetter.cpp.s
+.PHONY : DateGetter.cpp.s
 
-DateText.o: DateText.cpp.o
+DateNumGetter.o: DateNumGetter.cpp.o
 
-.PHONY : DateText.o
+.PHONY : DateNumGetter.o
 
 # target to build an object file
-DateText.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateText.cpp.o
-.PHONY : DateText.cpp.o
+DateNumGetter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNumGetter.cpp.o
+.PHONY : DateNumGetter.cpp.o
 
-DateText.i: DateText.cpp.i
+DateNumGetter.i: DateNumGetter.cpp.i
 
-.PHONY : DateText.i
+.PHONY : DateNumGetter.i
 
 # target to preprocess a source file
-DateText.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateText.cpp.i
-.PHONY : DateText.cpp.i
+DateNumGetter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNumGetter.cpp.i
+.PHONY : DateNumGetter.cpp.i
 
-DateText.s: DateText.cpp.s
+DateNumGetter.s: DateNumGetter.cpp.s
 
-.PHONY : DateText.s
+.PHONY : DateNumGetter.s
 
 # target to generate assembly for a file
-DateText.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateText.cpp.s
-.PHONY : DateText.cpp.s
+DateNumGetter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateNumGetter.cpp.s
+.PHONY : DateNumGetter.cpp.s
+
+DateTextGetter.o: DateTextGetter.cpp.o
+
+.PHONY : DateTextGetter.o
+
+# target to build an object file
+DateTextGetter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateTextGetter.cpp.o
+.PHONY : DateTextGetter.cpp.o
+
+DateTextGetter.i: DateTextGetter.cpp.i
+
+.PHONY : DateTextGetter.i
+
+# target to preprocess a source file
+DateTextGetter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateTextGetter.cpp.i
+.PHONY : DateTextGetter.cpp.i
+
+DateTextGetter.s: DateTextGetter.cpp.s
+
+.PHONY : DateTextGetter.s
+
+# target to generate assembly for a file
+DateTextGetter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/DateTextGetter.cpp.s
+.PHONY : DateTextGetter.cpp.s
+
+GUIClock.o: GUIClock.cpp.o
+
+.PHONY : GUIClock.o
+
+# target to build an object file
+GUIClock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.o
+.PHONY : GUIClock.cpp.o
+
+GUIClock.i: GUIClock.cpp.i
+
+.PHONY : GUIClock.i
+
+# target to preprocess a source file
+GUIClock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.i
+.PHONY : GUIClock.cpp.i
+
+GUIClock.s: GUIClock.cpp.s
+
+.PHONY : GUIClock.s
+
+# target to generate assembly for a file
+GUIClock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/GUIClock.cpp.s
+.PHONY : GUIClock.cpp.s
 
 GUITimer.o: GUITimer.cpp.o
 
@@ -357,59 +384,59 @@ Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
-Time12.o: Time12.cpp.o
+Time12Getter.o: Time12Getter.cpp.o
 
-.PHONY : Time12.o
-
-# target to build an object file
-Time12.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12.cpp.o
-.PHONY : Time12.cpp.o
-
-Time12.i: Time12.cpp.i
-
-.PHONY : Time12.i
-
-# target to preprocess a source file
-Time12.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12.cpp.i
-.PHONY : Time12.cpp.i
-
-Time12.s: Time12.cpp.s
-
-.PHONY : Time12.s
-
-# target to generate assembly for a file
-Time12.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12.cpp.s
-.PHONY : Time12.cpp.s
-
-Time24.o: Time24.cpp.o
-
-.PHONY : Time24.o
+.PHONY : Time12Getter.o
 
 # target to build an object file
-Time24.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24.cpp.o
-.PHONY : Time24.cpp.o
+Time12Getter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12Getter.cpp.o
+.PHONY : Time12Getter.cpp.o
 
-Time24.i: Time24.cpp.i
+Time12Getter.i: Time12Getter.cpp.i
 
-.PHONY : Time24.i
+.PHONY : Time12Getter.i
 
 # target to preprocess a source file
-Time24.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24.cpp.i
-.PHONY : Time24.cpp.i
+Time12Getter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12Getter.cpp.i
+.PHONY : Time12Getter.cpp.i
 
-Time24.s: Time24.cpp.s
+Time12Getter.s: Time12Getter.cpp.s
 
-.PHONY : Time24.s
+.PHONY : Time12Getter.s
 
 # target to generate assembly for a file
-Time24.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24.cpp.s
-.PHONY : Time24.cpp.s
+Time12Getter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time12Getter.cpp.s
+.PHONY : Time12Getter.cpp.s
+
+Time24Getter.o: Time24Getter.cpp.o
+
+.PHONY : Time24Getter.o
+
+# target to build an object file
+Time24Getter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24Getter.cpp.o
+.PHONY : Time24Getter.cpp.o
+
+Time24Getter.i: Time24Getter.cpp.i
+
+.PHONY : Time24Getter.i
+
+# target to preprocess a source file
+Time24Getter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24Getter.cpp.i
+.PHONY : Time24Getter.cpp.i
+
+Time24Getter.s: Time24Getter.cpp.s
+
+.PHONY : Time24Getter.s
+
+# target to generate assembly for a file
+Time24Getter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NcursesClock.dir/build.make CMakeFiles/NcursesClock.dir/Time24Getter.cpp.s
+.PHONY : Time24Getter.cpp.s
 
 Timer.o: Timer.cpp.o
 
@@ -481,27 +508,30 @@ help:
 	@echo "... Clock.o"
 	@echo "... Clock.i"
 	@echo "... Clock.s"
-	@echo "... Date.o"
-	@echo "... Date.i"
-	@echo "... Date.s"
-	@echo "... DateNum.o"
-	@echo "... DateNum.i"
-	@echo "... DateNum.s"
-	@echo "... DateText.o"
-	@echo "... DateText.i"
-	@echo "... DateText.s"
+	@echo "... DateGetter.o"
+	@echo "... DateGetter.i"
+	@echo "... DateGetter.s"
+	@echo "... DateNumGetter.o"
+	@echo "... DateNumGetter.i"
+	@echo "... DateNumGetter.s"
+	@echo "... DateTextGetter.o"
+	@echo "... DateTextGetter.i"
+	@echo "... DateTextGetter.s"
+	@echo "... GUIClock.o"
+	@echo "... GUIClock.i"
+	@echo "... GUIClock.s"
 	@echo "... GUITimer.o"
 	@echo "... GUITimer.i"
 	@echo "... GUITimer.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
-	@echo "... Time12.o"
-	@echo "... Time12.i"
-	@echo "... Time12.s"
-	@echo "... Time24.o"
-	@echo "... Time24.i"
-	@echo "... Time24.s"
+	@echo "... Time12Getter.o"
+	@echo "... Time12Getter.i"
+	@echo "... Time12Getter.s"
+	@echo "... Time24Getter.o"
+	@echo "... Time24Getter.i"
+	@echo "... Time24Getter.s"
 	@echo "... Timer.o"
 	@echo "... Timer.i"
 	@echo "... Timer.s"

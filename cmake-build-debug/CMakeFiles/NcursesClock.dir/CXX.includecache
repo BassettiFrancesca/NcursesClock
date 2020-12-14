@@ -10,43 +10,43 @@
 ctime
 -
 
-/home/giancesca/CLionProjects/NcursesClock/Date.cpp
-Date.h
-/home/giancesca/CLionProjects/NcursesClock/Date.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.cpp
+DateGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.h
 
-/home/giancesca/CLionProjects/NcursesClock/Date.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.h
 Clock.h
 /home/giancesca/CLionProjects/NcursesClock/Clock.h
-ncurses.h
--
 string
 -
 
-/home/giancesca/CLionProjects/NcursesClock/DateNum.cpp
-DateNum.h
-/home/giancesca/CLionProjects/NcursesClock/DateNum.h
+/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.cpp
+DateNumGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.h
 
-/home/giancesca/CLionProjects/NcursesClock/DateNum.h
-Date.h
-/home/giancesca/CLionProjects/NcursesClock/Date.h
-ncurses.h
--
+/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.h
+DateGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.h
 
-/home/giancesca/CLionProjects/NcursesClock/DateText.cpp
-DateText.h
-/home/giancesca/CLionProjects/NcursesClock/DateText.h
+/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.cpp
+DateTextGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.h
 
-/home/giancesca/CLionProjects/NcursesClock/DateText.h
-Date.h
-/home/giancesca/CLionProjects/NcursesClock/Date.h
-ncurses.h
--
+/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.h
+DateGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.h
+
+/home/giancesca/CLionProjects/NcursesClock/GUIClock.cpp
+GUIClock.h
+/home/giancesca/CLionProjects/NcursesClock/GUIClock.h
 
 /home/giancesca/CLionProjects/NcursesClock/GUIClock.h
-Date.h
-/home/giancesca/CLionProjects/NcursesClock/Date.h
-Time.h
-/home/giancesca/CLionProjects/NcursesClock/Time.h
+DateGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateGetter.h
+TimeGetter.h
+/home/giancesca/CLionProjects/NcursesClock/TimeGetter.h
+ncurses.h
+-
 
 /home/giancesca/CLionProjects/NcursesClock/GUITimer.cpp
 GUITimer.h
@@ -71,37 +71,39 @@ GUIClock.h
 /home/giancesca/CLionProjects/NcursesClock/GUIClock.h
 GUITimer.h
 /home/giancesca/CLionProjects/NcursesClock/GUITimer.h
-Time12.h
-/home/giancesca/CLionProjects/NcursesClock/Time12.h
-Time24.h
-/home/giancesca/CLionProjects/NcursesClock/Time24.h
-DateNum.h
-/home/giancesca/CLionProjects/NcursesClock/DateNum.h
-DateText.h
-/home/giancesca/CLionProjects/NcursesClock/DateText.h
+Time12Getter.h
+/home/giancesca/CLionProjects/NcursesClock/Time12Getter.h
+Time24Getter.h
+/home/giancesca/CLionProjects/NcursesClock/Time24Getter.h
+DateNumGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateNumGetter.h
+DateTextGetter.h
+/home/giancesca/CLionProjects/NcursesClock/DateTextGetter.h
 
-/home/giancesca/CLionProjects/NcursesClock/Time.h
-Clock.h
-/home/giancesca/CLionProjects/NcursesClock/Clock.h
+/home/giancesca/CLionProjects/NcursesClock/Time12Getter.cpp
+Time12Getter.h
+/home/giancesca/CLionProjects/NcursesClock/Time12Getter.h
 
-/home/giancesca/CLionProjects/NcursesClock/Time12.cpp
-Time12.h
-/home/giancesca/CLionProjects/NcursesClock/Time12.h
-
-/home/giancesca/CLionProjects/NcursesClock/Time12.h
-Time.h
-/home/giancesca/CLionProjects/NcursesClock/Time.h
-ncurses.h
+/home/giancesca/CLionProjects/NcursesClock/Time12Getter.h
+TimeGetter.h
+/home/giancesca/CLionProjects/NcursesClock/TimeGetter.h
+string
 -
 
-/home/giancesca/CLionProjects/NcursesClock/Time24.cpp
-Time24.h
-/home/giancesca/CLionProjects/NcursesClock/Time24.h
+/home/giancesca/CLionProjects/NcursesClock/Time24Getter.cpp
+Time24Getter.h
+/home/giancesca/CLionProjects/NcursesClock/Time24Getter.h
 
-/home/giancesca/CLionProjects/NcursesClock/Time24.h
-Time.h
-/home/giancesca/CLionProjects/NcursesClock/Time.h
-ncurses.h
+/home/giancesca/CLionProjects/NcursesClock/Time24Getter.h
+TimeGetter.h
+/home/giancesca/CLionProjects/NcursesClock/TimeGetter.h
+string
+-
+
+/home/giancesca/CLionProjects/NcursesClock/TimeGetter.h
+Clock.h
+/home/giancesca/CLionProjects/NcursesClock/Clock.h
+string
 -
 
 /home/giancesca/CLionProjects/NcursesClock/Timer.h

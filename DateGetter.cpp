@@ -1,7 +1,8 @@
-#include "Date.h"
+#include "DateGetter.h"
 
-int Date::showDay() {
+string DateGetter::getStringDayWeek() {
     string dayW;
+
     if (clock->getDayW() == 1) {
         dayW = "Monday";
     }
@@ -23,15 +24,14 @@ int Date::showDay() {
     if (clock->getDayW() == 0) {
         dayW = "Sunday";
     }
-    mvprintw(y/2, x/4, "%s", dayW.c_str()); // stampa il giorno testuale della settimana nella finestra
-    refresh();
-    return dayW.length(); // serve per distanziare gli elementi successivi
+
+    return dayW;
 }
 
-Clock *Date::getClock() const {
+Clock *DateGetter::getClock() const {
     return clock;
 }
 
-void Date::setClock(Clock *newClock) {
-    Date::clock = newClock;
+void DateGetter::setClock(Clock *newClock) {
+    DateGetter::clock = newClock;
 }

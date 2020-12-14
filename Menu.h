@@ -3,10 +3,10 @@
 
 #include "GUIClock.h"
 #include "GUITimer.h"
-#include "Time12.h"
-#include "Time24.h"
-#include "DateNum.h"
-#include "DateText.h"
+#include "Time12Getter.h"
+#include "Time24Getter.h"
+#include "DateNumGetter.h"
+#include "DateTextGetter.h"
 
 class Menu {
 public:

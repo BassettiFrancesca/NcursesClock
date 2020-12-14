@@ -1,23 +1,22 @@
 #ifndef NCURSESCLOCK_GUICLOCK_H
 #define NCURSESCLOCK_GUICLOCK_H
 
-#include "Date.h"
-#include "Time.h"
+#include "DateGetter.h"
+#include "TimeGetter.h"
+#include <ncurses.h>
 
 class GUIClock {
 public:
-    GUIClock(Date* d,Time* t) : datePrinter(d), timePrinter(t) {}
-
-    void print() {
-        datePrinter->print();
-        timePrinter->print();
+    GUIClock(DateGetter* d, TimeGetter* t) : dateGetter(d), timeGetter(t) {
+        getmaxyx(stdscr, y, x);
     }
 
+    void print();
 
-    // TODO: cambiare responsabilità qui ncurses gli altri solo rendere le stringhe
 private:
-    Date* datePrinter;
-    Time* timePrinter;
+    DateGetter* dateGetter;
+    TimeGetter* timeGetter;
+    int y, x;
 };
 
 #endif //NCURSESCLOCK_GUICLOCK_H

@@ -1,16 +1,15 @@
-#include "DateText.h"
+#include "DateTextGetter.h"
 
-void DateText::print() {
+string DateTextGetter::getStringDate() {
     updateClock();
-    int l = showDay() + 1; // lunghezza della stringa del giorno e uno spazio
-    mvprintw(y/2,x/4 + l,"%d",clock->getDayM());
-    int m = showMonth(l) + l + 1; // lunghezza di quello stampato prima e uno spazio
-    mvprintw(y/2,x/4 + m,"%d",clock->getYear());
-    refresh();
+    string date = getStringDayWeek() + " " + to_string(clock->getDayM()) + " " + getStringMonth() + " " +
+                                                       to_string(clock->getYear());
+    return date;
 }
 
-int DateText::showMonth(int l) {
+string DateTextGetter::getStringMonth() {
     string month;
+
     if (clock->getMonth() == 1) {
         month = "January";
     }
@@ -47,10 +46,6 @@ int DateText::showMonth(int l) {
     if (clock->getMonth() == 12) {
         month = "December";
     }
-    int d = 2; // se il giorno del mese è da 1 a 9
-    if(clock->getDayM() > 9) // se è di due cifre per spazio nel testo
-        d = 3;
-    mvprintw(y/2, x/4 + l + d, "%s", month.c_str());
-    refresh();
-    return month.length() + d; // lunghezza del mese + giorno del mese + spazio
+
+    return month;
 }

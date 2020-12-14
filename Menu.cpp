@@ -60,35 +60,33 @@ void Menu::getUserChoice() { // permette all'utente di selezionare la modalità 
 }
 
 void Menu::printChoice(int choice) { // stampa la scelta selezionata
-    int y, x;
-    getmaxyx(stdscr, y, x);
     if(choice == 0){
-        Time12* time = new Time12(y,x);
-        DateText* date = new DateText(y,x);
+        Time12Getter* time = new Time12Getter();
+        DateTextGetter* date = new DateTextGetter();
         clock = new GUIClock(date, time);
         while(true){
             clock->print();
         }
     }
     if(choice == 1){
-        Time12* time = new Time12(y,x);
-        DateNum* date = new DateNum(y,x);
+        Time12Getter* time = new Time12Getter();
+        DateNumGetter* date = new DateNumGetter();
         clock = new GUIClock(date, time);
         while(true){
             clock->print();
         }
     }
     if(choice == 2){
-        Time24* time = new Time24(y,x);
-        DateText* date = new DateText(y,x);
+        Time24Getter* time = new Time24Getter();
+        DateTextGetter* date = new DateTextGetter();
         clock = new GUIClock(date, time);
         while(true){
             clock->print();
         }
     }
     if(choice == 3){
-        Time24* time = new Time24(y,x);
-        DateNum* date = new DateNum(y,x);
+        Time24Getter* time = new Time24Getter();
+        DateNumGetter* date = new DateNumGetter();
         clock = new GUIClock(date, time);
         while(true){
             clock->print();
