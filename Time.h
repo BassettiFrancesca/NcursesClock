@@ -26,6 +26,8 @@ public:
         clock = new Clock();
     }
 
+    virtual ~Time() {}
+
 protected:
     Clock* clock;
     int y, x;

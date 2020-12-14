@@ -13,6 +13,8 @@ public:
         timePrinter->print();
     }
 
+
+    // TODO: cambiare responsabilità qui ncurses gli altri solo rendere le stringhe
 private:
     Date* datePrinter;
     Time* timePrinter;

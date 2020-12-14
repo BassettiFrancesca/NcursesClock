@@ -15,7 +15,7 @@ public:
 
     void getInput();
 
-    void print();
+    void print(); // TODO: come GUIClock
 
 private:
     Timer* timer;

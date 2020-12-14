@@ -284,19 +284,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/giancesca/CLionProjects/NcursesClock/Clock.h
-ctime
--
-
 /home/giancesca/CLionProjects/NcursesClock/Timer.h
 ctime
 -
-
-/home/giancesca/CLionProjects/NcursesClock/test/ClockFixture.cpp
-gtest/gtest.h
-/home/giancesca/CLionProjects/NcursesClock/test/gtest/gtest.h
-../Clock.h
-/home/giancesca/CLionProjects/NcursesClock/Clock.h
 
 /home/giancesca/CLionProjects/NcursesClock/test/TimerTest.cpp
 gtest/gtest.h

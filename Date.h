@@ -25,6 +25,8 @@ public:
         clock = new Clock();
     }
 
+    virtual ~Date() {}
+
     int showDay();
 
 protected:
